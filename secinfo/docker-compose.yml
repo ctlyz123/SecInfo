@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+    crawler:
+        build: .
+        privileged: true
+        volumes:
+        - /tmp/share:/tmp/SecInfo
+        tty: true
+        hostname: SecInfo
+        ports:
+        - 9999:9999

@@ -1,0 +1,3 @@
+HOME = /home/SecInfo/
+
+*/30 * * * * python main.py

@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  mongodb:
+    image: mongo
+    privileged: true
+    tty: true
+    hostname: mongo
+    volumes:
+    - /tmp/share:/tmp/mongodb
+  secinfo:
+    build: secinfo
+    privileged: true
+    volumes:
+    - /tmp/share:/tmp/myfound
+    tty: true
+    hostname: SecInfo
+    ports:
+    - 9999:9999
+    links:
+    - mongodb

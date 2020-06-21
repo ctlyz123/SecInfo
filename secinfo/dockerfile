@@ -1,0 +1,11 @@
+FROM ubuntu:16.04 
+RUN apt-get update && apt-get install cron -y && apt-get install python -y && apt-get install curl -y
+RUN apt-get update && apt-get install python-pip -y && pip install --upgrade pip && pip install requests pymongo flask 
+COPY root /tmp/root
+RUN crontab -u root /tmp/root && systemctl enable cron
+WORKDIR /home
+COPY SecInfo.tar /home/SecInfo.tar
+RUN tar xvf SecInfo.tar
+COPY start.sh /opt/start.sh
+RUN chmod +x /opt/start.sh
+ENTRYPOINT ["/opt/start.sh"]

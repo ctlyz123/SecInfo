@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+    mongodb:
+        image: mongo
+        privileged: true
+        ports:
+        - "27017:27017"
+        tty: true
+        hostname: mongo
+        volumes:
+        - /tmp/share:/tmp/mongodb

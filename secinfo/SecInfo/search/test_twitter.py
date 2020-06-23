@@ -16,7 +16,7 @@ class TwitterSearch():
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:62.0) Gecko/20100101 Firefox/62.0'
         }
-        req = requests.get(token_url,verify=False,headers=headers)
+        req = requests.get(token_url,verify=False,headers=headers,proxies=proxies)
         token = re.findall("gt=(\d+)",req.content)[0]
         return token
     def _FormatOutput(self,output):
@@ -60,7 +60,7 @@ class TwitterSearch():
             "authorization": "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA",
             "x-guest-token": self._FetchToken()
         }
-        req = requests.get(search_url,params=data,headers=headers,verify=False)
+        req = requests.get(search_url,params=data,headers=headers,verify=False,proxies=proxies)
         try:
             req_json = json.loads(req.content)
             tweets = req_json["globalObjects"]["tweets"]

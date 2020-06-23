@@ -12,6 +12,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -175,7 +176,7 @@
       <updated>1592636535102</updated>
       <workItem from="1592636539430" duration="14817000" />
       <workItem from="1592717997017" duration="4039000" />
-      <workItem from="1592723578732" duration="12694000" />
+      <workItem from="1592723578732" duration="29110000" />
     </task>
     <servers />
   </component>
@@ -187,13 +188,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Server/run.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="18" />
+          <line>40</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Server/run.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="19" />
+          <line>57</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -201,7 +202,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SecInfo$test_twitter.coverage" NAME="test_twitter Coverage Results" MODIFIED="1592708547351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
     <SUITE FILE_PATH="coverage/SecInfo$twitter.coverage" NAME="twitter Coverage Results" MODIFIED="1592663366425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/search" />
-    <SUITE FILE_PATH="coverage/SecInfo$main.coverage" NAME="main Coverage Results" MODIFIED="1592747964455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SecInfo$run.coverage" NAME="run Coverage Results" MODIFIED="1592748095621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server" />
+    <SUITE FILE_PATH="coverage/SecInfo$main.coverage" NAME="main Coverage Results" MODIFIED="1592910353999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SecInfo$run.coverage" NAME="run Coverage Results" MODIFIED="1592927444457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server" />
   </component>
 </project>

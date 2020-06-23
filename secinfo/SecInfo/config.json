@@ -6,5 +6,8 @@
     "name": "",
     "pass": ""
 
+  },
+  "cache": {
+    "filename": "/tmp/cache.json"
   }
 }
